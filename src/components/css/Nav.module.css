@@ -1,0 +1,52 @@
+.navbar {
+  margin: 0;
+  background-color: #46211a;
+  color: #fffbfb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+.navbrand {
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.navbarlogo {
+  width: 70px;
+  height: 70px;
+}
+
+.brandname {
+  color: #fffbfb;
+  text-decoration: none;
+  margin-left: 10px;
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.5rem;
+}
+
+span {
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.navlink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navlist {
+  display: flex;
+  gap: 20px;
+  padding-right: 50px;
+}
+
+.navlist li {
+  list-style: none;
+}
+
+.navlist li a {
+  text-decoration: none;
+  color: inherit;
+}
