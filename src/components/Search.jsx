@@ -2,7 +2,6 @@
 import { useEffect, useState } from "react";
 import { URL, API_KEY } from "./config";
 import styles from "./css/Search.module.css";
-import "./css/Search.module.css";
 
 /**
  * Search component handles the input field for querying recipes.

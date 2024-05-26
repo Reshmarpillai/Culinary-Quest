@@ -1,58 +1,45 @@
-/* .searchContainer {
-  margin: 20px auto;
-  width: 300px;
-  position: relative;
-}
-
-.input {
-  border-radius: 10px;
-} */
-
-body {
-  font-family: "Roboto", Arial, sans-serif;
-}
-
 .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  max-width: 31.25rem;
-  margin: 6rem auto;
-}
-
-.label {
-  font-size: 0.625rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: +1.3px;
-  margin-bottom: 1rem;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .searchBar {
-  width: 100%;
   display: flex;
-  flex-direction: row;
   align-items: center;
+  width: 80%; /* Adjust as necessary to control the width */
+  max-width: 600px; /* Adjust as necessary to control the maximum width */
+  background-color: #f5f5f5;
+  border-radius: 50px; /* Makes the search bar rounded */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px; /* Adjust the padding as necessary */
 }
 
-#searchQueryInput {
-  width: 100%;
-  height: 2.8rem;
-  background: #f5f5f5;
-  outline: none;
+.searchBar input {
+  flex: 1;
   border: none;
-  border-radius: 1.625rem;
-  padding: 0 3.5rem 0 1.5rem;
-  font-size: 1rem;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  border-radius: 50px; /* Makes the input rounded */
 }
 
-#searchQuerySubmit {
-  width: 3.5rem;
-  height: 2.8rem;
-  margin-left: -3.5rem;
+.searchBar button {
   background: none;
   border: none;
-  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-left: 10px;
 }
 
-#searchQuerySubmit:hover {
-  cursor: pointer;
+.searchBar button svg {
+  fill: #666666;
 }
