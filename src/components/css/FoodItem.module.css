@@ -1,0 +1,41 @@
+.itemContainer {
+  width: 300px;
+  border-radius: 10px;
+  background-color: bisque;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  margin: 40px;
+  overflow: hidden;
+}
+
+.itemImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.itemContent {
+  text-align: center;
+}
+
+.itemName {
+  font-family: "Libre Baskerville", serif;
+  font-size: larger;
+  font-weight: 600;
+  color: #46211a;
+}
+
+.buttonContainer {
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.itemButton {
+  border: none;
+  background-color: #46211a;
+  padding: 10px;
+  border-radius: 10px;
+  color: aliceblue;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 1px;
+  font-weight: bolder;
+}

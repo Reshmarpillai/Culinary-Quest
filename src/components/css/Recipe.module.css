@@ -1,0 +1,43 @@
+.header {
+  background-color: #46211a;
+  color: aliceblue;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.imageHeader {
+  float: none;
+  text-align: center;
+  transform: translateY(-55px);
+  margin-bottom: -50px;
+}
+
+.recipeImage {
+  height: 168px;
+  width: 168px;
+  max-width: 100%;
+  border-radius: 90px;
+  border: 3px solid #46211a;
+}
+
+hr {
+  background-color: aliceblue;
+  width: 80%;
+}
+
+.minutes {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+span {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+}
+.info {
+  background-color: bisque;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
