@@ -2,7 +2,8 @@
   background-color: #46211a;
   color: aliceblue;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 50px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
 }
 
 .imageHeader {
@@ -31,7 +32,7 @@ hr {
   padding: 20px;
 }
 
-span {
+.fontstyle {
   font-family: "Times New Roman", Times, serif;
   font-size: 15px;
 }
@@ -40,4 +41,88 @@ span {
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipeContainer {
+  background-color: #f1e0d0;
+  display: block;
+  gap: 1rem;
+}
+.recipeContainer h2 {
+  color: #46211a;
+  font-family: "Libre Baskerville", serif;
+}
+
+.summary {
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.summary p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+  color: #46211a;
+  text-align: justify;
+}
+
+.ingredients {
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ingredientContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.ingredient {
+  width: 250px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: #fbfbfb;
+}
+
+.ingredientImages {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.nameContainer {
+  display: flex;
+  flex-direction: column;
+  color: #46211a;
+  font-family: "Playfair Display", serif;
+}
+
+.nameContainer h4 {
+  margin: 0;
+}
+
+.making {
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.makingInfo {
+  font-size: 1.1rem;
+  text-align: justify;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.makingInfo li {
+  list-style-type: square;
+  color: #46211a;
 }

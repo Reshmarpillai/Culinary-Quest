@@ -1,16 +1,17 @@
 .slogan {
   /* background-color: #A69080  #AC8968  #93785B; */
-  background-color: #F1D3B2;
+  background-color: #f1d3b2;
   height: 120px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .SloganHead {
   font-family: "Libre Baskerville", serif;
-  color: #46211A;
+  color: #46211a;
   font-size: 2 rem;
   margin: 0;
 }

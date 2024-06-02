@@ -51,22 +51,90 @@ export default function Recipe({ FoodId }) {
         <h2>{recipe.title}</h2>
         <hr />
         <div className={styles.minutes}>
-          <span>⏲️Ready In {recipe.readyInMinutes} Minutes</span>
-          <span>🍽️Yield : {recipe.servings}</span>
+          <span className={styles.fontstyle}>
+            ⏲️Ready In {recipe.readyInMinutes} Minutes
+          </span>
+          <span className={styles.fontstyle}>🍽️Yield : {recipe.servings}</span>
         </div>
       </div>
       {/* recipe header ends here */}
 
+      {/* info div */}
       <div className={styles.info}>
-        <span>🥕🫛Vegitarian</span>
-        <span>☘️🌿Veegan</span>
+        <span className={styles.fontstyle}>
+          {recipe.vegetarian ? "🥕🫛Vegetarian" : "🥩🍗Non-Vegetarian"}
+        </span>
+        <span className={styles.fontstyle}>
+          {recipe.vegan ? "☘️🌿Vegan" : ""}
+        </span>
+        <span className={styles.fontstyle}>
+          $ {recipe.pricePerServing / 100}
+        </span>
       </div>
+      {/* info div ends here ....*/}
 
-      <div>
-        <h2>Flavor Profile</h2>
-        {parse(sanitizedSummary)}
-        <h2> Cooking Essentials</h2>
-        <h2>How to Make</h2>
+      <div className={styles.recipeContainer}>
+        {/* recipe summary */}
+        <div className={styles.summary}>
+          <h2>Flavor Profile</h2>
+          <p>{parse(sanitizedSummary)}</p>
+        </div>
+        {/* recipe summary ends .... */}
+
+        {/* ingredients div */}
+        <div className={styles.ingredients}>
+          {" "}
+          <h2> Cooking Essentials</h2>
+          <div className={styles.ingredientContainer}>
+            {" "}
+            {recipe.extendedIngredients &&
+            recipe.extendedIngredients.length > 0 ? (
+              recipe.extendedIngredients.map((item) => (
+                <div className={styles.ingredient} key={item.id}>
+                  <div>
+                    <img
+                      className={styles.ingredientImages}
+                      src={
+                        `https://spoonacular.com/cdn/ingredients_100x100/` +
+                        item.image
+                      }
+                      alt={item.name}
+                    />
+                  </div>
+
+                  <div className={styles.nameContainer}>
+                    {" "}
+                    <h4>{item.name}</h4>
+                    <h4>
+                      {item.amount}
+                      {item.unit}
+                    </h4>
+                  </div>
+                </div>
+              ))
+            ) : (
+              <div >No ingredients available</div>
+            )}
+          </div>
+        </div>
+        {/* ingredients div ends... */}
+
+        <div className={styles.making}>
+          {" "}
+          <h2>How to Make</h2>
+          <div className={styles.makingInfo}>
+            {recipe.analyzedInstructions &&
+            recipe.analyzedInstructions.length > 0 &&
+            recipe.analyzedInstructions[0].steps ? (
+              recipe.analyzedInstructions[0].steps.map((step) => (
+                <li key={step.number}>{step.step}</li>
+              ))
+            ) : (
+              <div >No instructions available</div>
+            )}
+          </div>
+        </div>
+        {/* recipe making div  */}
       </div>
     </div>
   );
